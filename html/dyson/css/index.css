@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+@import url('./dyson.css');
+
+.main-img{
+    display: flex;
+    z-index:-1;
+    overflow: hidden;
+    margin:0 auto;
+}
+.main-img>img{
+width: 100%;
+}
+.main-button{
+    width:1920px;
+    height:970px;
+    margin:0 auto;
+    padding:0;
+
+}
+.main-button>ul{
+    display: flex;
+    width: 1600px;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.main-button>ul>li{
+    position: relative;
+    width:300px;
+}
+
+.main-button>ul>li>div>a:nth-child(2){
+    font-size: 20px;
+    position: absolute;
+    color:#7E7A7A;
+    left:100px;
+
+}
+
+.main-img2{
+    margin:0 auto;
+}
+.main-img2>img{
+    width:100%;
+    position:absolute;
+    z-index:-1;
+    overflow: hidden;
+}
+
+
+
+
+.main-icon{
+    width:100%;
+    margin:0 auto;
+    padding:0;
+}
+.main-icon>ul{
+    display:flex;
+    width:1600px;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.main-icon>ul>li{
+    position:relative;
+    width:300px;
+}
+.icon-img{
+    position:absolute;
+    top:80px;
+}
+.icon-img>div>a>img{
+    position: absolute;
+    left:0; right: 0;
+    font-size:30px;
+    color:#404040;
+    width:80px;
+}
+.icon-img>div>p{
+    position: absolute;
+    font-size:20px;
+    color:#404040;
+    width:160px;
+    left:100px;
+    top:25px;
+}
+.arrow2{
+    position:absolute;
+    opacity:0.5;
+    width:30px;
+}
+.arrow2>a>img{
+    position: absolute;
+    left:1800px;
+    bottom:-380px; 
+    width:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*포지션 absolute 나 fixed를 가지고 있으면  margin 0 auto가 먹히지 않는다(쓸필요X)*/
+
+/* .main-button>ul>li>div>a{
+    display: inline-block;
+    font-size: 20px;
+    color:#7E7A7A;
+}
+.main-button>ul>li>div>a>img{
+    position: absolute;
+    width:300px;
+    top:1150px;
+}
+.buttons:nth-child(1)>div>a>img{
+    position: absolute;
+    left:150px;
+}
+.buttons:nth-child(2)>div>a>img{
+    position: absolute;
+    left:1000px;
+}
+.buttons:nth-child(3)>div>a>img{
+    left:150px;
+}
+.buttons:nth-child(4)>div>a>img{
+    left:150px;
+} */
+

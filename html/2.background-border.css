@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+.bg{
+    width:1400px;
+    margin:100px auto;
+}
+.bg > ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+.bg > ul >li{
+    height:300px; border:1px solid #000;
+}
+.bg > ul >li:nth-of-type(1){
+    background-color:rgba(255,0,0,0.4);
+}
+.bg > ul >li:nth-of-type(2){
+    background-image:url('./img/03.jpg');
+}
+.bg > ul >li:nth-of-type(3){
+    background-image:url('./img/04.jpg');
+    background-repeat: no-repeat;
+    height:900px;
+    /*repeat-x,repeat-y,no-repeat*/
+}
+.bg > ul >li:nth-of-type(4){
+    background-image:url('./img/05.jpg');
+    background-repeat: no-repeat;
+    height:900px;
+    background-position:calc(100% - 20px) 50%;
+    /*
+    calc 의 연산기호와 문자는 반드시 떨어져야한다.
+    떨어지지않으면 문자로 인식한다.
+    가로(left,center,right)
+    세로(top,center,bottom)
+    */
+}
+.bg > ul >li:nth-of-type(5){
+    background-image:url('./img/06.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+/*cover 비율을 깨트리지 않고 지정된 사이즈 영역을 꽉 채운다.
+100%와 cover를 많이쓴다.*/
+.bg > ul >li:nth-of-type(6){
+    background-image:url('./img/07.jpg');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+/*attachment-백그라운드 고정,마우스 스크롤따라 따라오는 이미지*/
+.bg > ul > li:nth-of-type(7){
+    background:#000 url('./img/08.jpg') 0 0 / 60% no-repeat fixed; 
+}
+
+.bg > ul > li:nth-of-type(8){
+background:linear-gradient(90deg, rgb(255, 129, 74) 30%,rgb(255, 248, 34) 50%,rgb(0,255,15) 70%);
+}
+/* to right,90deg 어느정도 퍼센테이지 갭이 있어야 그라데이션이 자연스러움 50%이면 다음은 70% 그다음은 90% 이정도의 갭 필요
+50% 50~60% 60~70% 이러면 그라데이션보단 색이 나뉘어짐*/
+
+.bg > ul > li:nth-of-type(9){
+    background:radial-gradient(circle at 75% 100%, rgb(255, 129, 74) 10%,rgb(255, 248, 34) 30%);
+    }
+/*circle at x% y%- 원형 모양, 가로, 세로 퍼센테이지*/
+
+.bg > ul > li:nth-of-type(10){
+    background:conic-gradient( at 25% 50%, red 20%,yellow 40%,blue 60%,green 80%,red );
+    width:300px;
+    border-radius:100%;
+}
+
+.bg > ul > li:nth-of-type(11){
+    background:repeating-linear-gradient(45deg,red, red 10px,yellow 10px, yellow 20px);
+}
+
+/*border*/
+.border{
+    width:1400px; margin:100px auto;
+}
+.border > ul{
+padding:0; list-style-type: none;
+}
+.border > ul > li{
+    white-space: pre-line;
+    margin:50px 0;
+}
+.border > ul > li:nth-of-type(1){
+    background-color:#eee; padding:40px;
+}
+.border > ul > li:nth-of-type(2){
+    border:1px solid #f00;
+    border-width:10px 0px;
+
+    border-top-width:10px;
+    border-bottom-width:10px;
+    border-left-width:0px;
+    border-right-width:0px;
+}
+.border > ul > li:nth-of-type(3) > span{
+    display:inline-block;
+    padding:30px 50px;
+    border:6px solid rgb(255, 170, 170);
+}
+.border > ul > li:nth-of-type(3) > span:nth-of-type(1){
+    border-style:solid;
+}
+.border > ul > li:nth-of-type(3) > span:nth-of-type(2){
+    border-style:dotted;
+}
+.border > ul > li:nth-of-type(3) > span:nth-of-type(3){
+    border-style:dashed;
+}
+.border > ul > li:nth-of-type(3) > span:nth-of-type(4){
+    border-style:double;
+}
+.border > ul > li:nth-of-type(3) > span:nth-of-type(5){
+    border-style:groove;
+}
+.border > ul > li:nth-of-type(3) > span:nth-of-type(6){
+    border-style:ridge;
+}
+.border > ul > li:nth-of-type(3) > span:nth-of-type(7){
+    border-style:inset;
+}
+.border > ul > li:nth-of-type(3) > span:nth-of-type(8){
+    border-style:outset;
+}

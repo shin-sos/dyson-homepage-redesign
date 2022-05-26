@@ -1,0 +1,179 @@
+@charset "utf-8";
+/*common.css*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html,body{margin:0; font-size:14px}
+
+ul,li,ol{list-style-type:none; margin:0; padding:0;}
+
+h1,h2,h3,h4,p,figure{margin:0;}
+
+a{text-decoration: none;}
+
+img{vertical-align: top;}
+
+
+*{box-sizing:border-box;
+font-size: 1rem;
+line-height: 1.7;
+color:#626262;
+font-family: 'Playfair Display',serif;
+}
+
+
+
+h2{font-size:1rem;
+    color:#b4ad9e;
+    font-family: 'Nunito Sans',sans-serif;
+    font-weight: 500;
+    margin-bottom:60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2::after{
+    content:'';
+    display:block; 
+    width:60px; 
+    border-bottom: 2px solid #000;
+    margin:10px auto;
+}
+
+.txt-s1{}
+.txt-s1 > b{font-size:2.2rem;}
+.txt-s1 > p{margin:30px 0 50px;}
+.txt-s1 > a{font-size:1rem;
+    color:#b4ad9e;
+    font-family: 'Nunito Sans',sans-serif;
+    text-transform: uppercase;
+}
+
+
+header{
+    /* background-color:#b4ad9e; */
+    padding:10px 0;
+}
+header > div {
+    width:1060px; margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > div >h1{}
+header > div > h1 > a{}
+
+header > div > nav {}
+header > div > nav > ul{display:flex;}
+header > div > nav > ul > li{
+    position: relative;
+}
+header > div > nav > ul > li > a{
+    display: inline-block;
+    padding:15px 2.5vw;
+    text-transform: uppercase;
+}
+header > div > nav > ul > li > div{
+position: absolute;
+left: 0; bottom: 0;
+transform: translateY(100%);
+width:100%; 
+background-color: rgb(0, 0, 0);
+padding: 20px;
+display: none;
+}
+
+header > div > nav > ul > li > div > a{}
+
+header > div > nav > ul > li:hover > div{
+    display: block;
+}
+.life{
+    width:1060px;
+    height:610px;
+    display:flex;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+    left: -315px;
+}
+.life > p >img{
+    width:100;
+    position:absolute;
+    left:10px;
+    margin-bottom: 100px;
+}
+.life > h2{
+    margin:0;
+    height:30px;
+    text-align: center;
+    position: relative;
+    bottom: -72px;
+    left:70px;
+}
+.txt-s1{
+    width:100%;
+    position: relative;
+    bottom: -50px;
+
+}
+.life>h2::after{
+    border-style: none;
+}
+
+
+.email{
+    background-color: #f0f0f0;
+    padding:100px 0;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.email > p{border-bottom: 2px solid #000;}
+
+.email > p >input{
+    border:none;
+    width:600px;
+    background-color: transparent;
+}
+.email > p > a{background-image: "./img/btn_newsletter.png";}
+
+footer{
+    background: #eee; padding: 40px 0;
+}
+footer >div{
+    width:1060px; margin:0 auto;
+    display: flex; justify-content: space-between;
+}
+footer>div>p{}
+footer>div>p:nth-child(1)>a{margin:0 30px;}
+
+footer>div>p:nth-child(2)>span{
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1;
+
+}
+footer>div>p:nth-child(2)>span>a{
+    font-size:0; width: 18px; height:18px;
+    display: inline-block;
+    background:url('../img/btn_sns.png') no-repeat;
+    vertical-align: middle;
+}
+footer>div>p:nth-child(2)>span>a:nth-child(1){
+    background-position: 5px;
+}
+footer>div>p:nth-child(2)>span>a:nth-child(2){
+    background-position: -26px;
+}
+footer>div>p:nth-child(2)>span>a:nth-child(3){
+    background-position: -61px;
+}
+
+
+
+
+
+
+
+/* 테이블, 레이어 팝업 , 버튼, 탭, 레이블, 컬러, 레이아웃(헤더, 풋터, 사이드콘텐츠) */

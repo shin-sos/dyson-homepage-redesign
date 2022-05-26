@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import url('./common3.css');
+
+.vita-1{
+    position:relative;
+    z-index:-1;
+    left:600px;
+    bottom:-110px;
+    width:211px;
+    margin:0;
+}
+
+.vita-1>img{ 
+    width:100%;
+    height:602px;
+}
+
+.vita-2{
+    position:relative;
+    left:430px;
+    top:-70px;
+    width:280px;
+    margin: 0;
+
+}
+
+.vita-2>img{ 
+    width:100%;
+    height:271px;
+}
+

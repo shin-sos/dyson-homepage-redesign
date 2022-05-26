@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+[name="slide"]{display:none;}
+.slidebox{
+    max-width:1920px;
+    width:100%;
+    margin:0 auto;
+}
+.sildebox img{
+    max-width:100%;
+}
+.slidebox .slidelist{
+    white-space:nowrap;
+    font-size:0;
+    overflow:hidden;
+}
+.slidebox .slideitem label{
+    position: relative;
+    display:inline-block;
+    vertical-align: middle;
+    width:100%;
+    transition:all .35s;
+}
+.slidebox .slideitem label{
+    position: absolute;
+    z-index:1;
+    top:50%;
+    transform:translateY(-50%);
+    padding:20px;
+    border-radius:50%;
+    cursor:pointer;
+}
+label.left{
+    left:20px;
+    background-color:#242424;
+    background-image:url('./img/left arrow icon.png');
+    background-position:center center;
+    background-size:50%;
+    background-repeat: no-repeat;
+}
+label.right{
+    left:20px;
+    background-color:#242424;
+    background-image:url('./img/right arrow icon.png');
+    background-position:center center;
+    background-size:50%;
+    background-repeat: no-repeat;
+}

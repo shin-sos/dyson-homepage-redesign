@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No.1</title>
+    <link href="./basic.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--basic.html
+        basic.css
+    -->
+    <article>
+        <h1>block 요소</h1>
+        <p>※특징 ) 줄내리기 효과,
+            사용할수 있는 전체 가로영역 설정
+            h,p태그의 자손태그로 block태그를 사용할수 없음(저 두개를 제외한 다른태그들은 사용가능)
+        </p>
+        <div>
+            h1~h6 -> 타이틀 태그(숫자가 커질수록 타이틀 비중 작음)<br>
+            div ->box형태의 콘텐츠를 그룹<br>
+            article ->box형태의 콘탠츠 그룹(조건:자식으로 h태그를 반드시 작성해야함)<br>
+            p-> 문서의 단락이 되는 콘텐츠 그룹<br>
+            ul,li -> 순서가 없는 목록 or 리스트 콘텐츠에 사용
+        </div>
+        <div class="ex">
+            <div>
+                <h1>가장 큰타이틀 (문서에 한번만 사용함)</h1>
+                <h2>두번째로 큰타이틀</h2>
+                <h3>세번째로 큰타이틀</h3>
+                <h4>네번째로 큰타이틀</h4>
+                <h5>다섯번째로 큰타이틀</h5>
+                <h6>여섯번째로 큰타이틀</h6>
+            </div>
+            <p>
+                텍스트, 또는 이미지 태그를 만들때 사용
+            </p>
+            <ol>
+                <li>리스트 형식의 콘텐츠 만들때 사용</li>
+                <li>여백과 블릿을 기본값으로 설정하고 있음</li>
+                <li>콘텐츠 유형(메뉴, 카드형 콘텐츠, 게시판 리스트...)</li>
+            </ol>
+    </article>
+
+<!-- inline -->
+<article>
+    <h2>inline 요소</h2>
+    <p>
+        ※특징 ) 한줄내리기 없음,
+        콘텐츠의 크기 많큼 가로영역 설정
+        
+        inline요소안에 block요소 사용 금지 (x)
+        style명령 -> 사이즈,여백 사용 못함 (x)
+    </p>
+    <div>
+        span - 인라인요소들 그룹<br>
+        img - 이미지 URL 호출<br>
+        a - 다른 문서로 이동(링크)<br><br>
+        strong,b - 텍스트 bold<br>
+        i,em - 텍스트 italic<br>
+        mark - 텍스트 배경색 생성
+    </div>
+<div class="ex">
+    <span>
+        텍스트, 이미지와 같은 
+        <b>inline 콘텐츠를 그룹</b>
+    </span>
+    <img src="./wawa.jpg" alt="이미지 제목 또는 요약설명">
+    <a href="http://naver.com" target="_blank">
+        네이버로 이동
+    </a>
+    <ul>
+        <li>
+        <strong>strong 강조(bold)</strong>
+        </li>
+        <li><b>b(bold)</b></li>
+        <li><em>em 강조(italic)</em></li> 
+        <li><i>i(italic)</i></li>
+        <li><mark>
+        mark (배경색으로 강조)
+        </mark>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+</article>
+
+
+
+
+
+
+    <header>Alt+Shift+f=자동정리</header>
+    <main>코멘트+F=브라우저 나옴
+        들여쓰기(tab)
+        내여쓰기(shift+Tab)
+        <br>컨트롤+F 내가 원하는 코드를 찾는 단축키
+        <br>컨트롤+H 내가 원하는 코드를 바꾸는 단축키
+        <br>컨트롤+G 내가 원하는 코드의 줄이동 단축키
+        <br>*부모,자식,후손 관계를 명확하게
+        <br>컨트롤+Z 뒤로 이동
+        <br>컨트롤+Y 앞으로 이동
+    </main>
+    <footer>컨트롤+/는 나만 볼 수 있게</footer>
+</body>
+
+</html>
