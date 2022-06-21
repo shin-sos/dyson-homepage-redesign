@@ -41,14 +41,11 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.menu>h1{
-}
+
 .menu>h1>a>img{
     width:92px;
 }
-.menu>h1>nav{
 
-}
 .menu>nav>ul{
     display: flex;
 }

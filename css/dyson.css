@@ -26,7 +26,7 @@ a{text-decoration: none;
 img{
     vertical-align:top;
 }
-
+    
 header{ 
     padding:10px 0;
     background-color: black;
@@ -41,14 +41,11 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.menu>h1{
-}
+
 .menu>h1>a>img{
     width:92px;
 }
-.menu>h1>nav{
 
-}
 .menu>nav>ul{
     display: flex;
 }
@@ -131,7 +128,7 @@ nav>a::after{
     background-color: #242424;
     opacity: 0.9;
     transform: translateY(100%);
-    display: flex;
+    display: none;
     justify-content: center;
 }
 .sub > div{
@@ -156,10 +153,8 @@ main{
     padding:0;
     position: relative;
 }
-.slide{
-    display:flex;
-    align-items: center;
-}
+
+
 .main-txt>p{
     position: absolute;
     bottom:600px;
@@ -354,7 +349,7 @@ bottom:550px;
 }
 .fixed > div img{width:100%}
 
-.fixed > div:nth-child(1){}
+
 .fixed > div:nth-child(2){
     transform: translateY(130%);
 }
