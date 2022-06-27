@@ -41,7 +41,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-
+.menu>h1{width:20%}
 .menu>h1>a>img{
     width:92px;
 }
@@ -57,11 +57,13 @@ header{
 .menu>nav>ul>li>a{
     display:inline-block;
     padding:15px 20px;
-    color:white;
+    color:rgb(200, 200, 200);
     font-size: 20px;
+    transition: all 0.3s linear;
 }
-a:hover{
-    color:#7E7A7A;
+.menu>nav>ul>li>a:hover{
+    color:#fff;
+    font-weight: bold;
 }
 nav>a::after{
     content: '';
@@ -91,6 +93,7 @@ nav>a::after{
     margin:5px 0;
 } */
 /* .menu>nav>ul>li>div>a{color:#fff;} */ */
+.menu>div{width:20%;}
 .menu>div>div{
     display:block;
 }
@@ -124,27 +127,36 @@ nav>a::after{
     width:100%;
     position: absolute;
     left:0; bottom:0;
-    padding:1%;
     background-color: #242424;
     opacity: 0.9;
-    transform: translateY(100%);
-    display: none;
-    justify-content: center;
+    transform: translateY(99%);
+    text-align: center;
 }
+
 .sub > div{
     display:none;
     width:1200px;
+    margin:0 auto;
+    padding:1% 0;
+    text-align: center;
 }
-.sub > div.active{
-    display: block;
-}
-.sub>div>a{
+
+.sub>div>span:nth-child(1)>a:nth-child(1){border-bottom:0.1px solid #ddd;}
+.sub>div:nth-child(1) a{ text-align: left; display:block; padding:0; margin-top:1px;}
+.sub>div span{display: inline-block; vertical-align: top; padding:0 3%;}
+.sub>div a{
     display:inline-block;
-    width:30%;
+    padding:0 3%;
+    
     line-height: 2;
     color:#ddd;
 }
 
+@media screen and (max-width:100px){
+    
+}
+@media screen and (min-width:100px)and(max-width:200px){}
+@media screen and (min-width:200px){}
 
 
 main{
@@ -238,18 +250,25 @@ main{
     width:25%;
     position: relative;
 }
+
 .buttons>li>div{   
     width:100%;
 }
 .buttons>li>div>a{   
     font-size:20px;
     color:#7E7A7A;
+    transition: all 0.2s linear;
 }
 .buttons>li>div>a>img{
     width:100%;
+    transition: all 0.2s linear;
 }
-
-
+.buttons>li:hover>div>a>img{
+    transform:scale(1.1);
+}
+.buttons>li:hover>div>a{
+    color:rgb(32, 120, 251);
+}
 
 .buttons>li::after{
     content: "";
@@ -341,7 +360,7 @@ bottom:550px;
     z-index: 9999;
     margin:0 auto;
     width:60px; height:60px;
-    right:3%; bottom:25%;
+    right:3%; bottom:10%;
 }
 .fixed > div{
     position: absolute;
@@ -349,12 +368,21 @@ bottom:550px;
 }
 .fixed > div img{width:100%}
 
-
 .fixed > div:nth-child(2){
-    transform: translateY(130%);
+    transform: translateY(0%);
+    z-index: -2;
+    transition: all 0.2s linear;
+}
+.fixed:hover > div:nth-child(2){
+    transform: translateY(-260%);
 }
 .fixed > div:nth-child(3){
-    transform: translateY(260%);
+    transform: translateY(0%);
+    z-index: -1;
+    transition: all 0.2s linear;
+}
+.fixed:hover > div:nth-child(3){
+    transform: translateY(-130%);
 }
 
 
@@ -393,7 +421,7 @@ footer{
     text-align: left;
 }
 .under-1{
-    width:353px;
+    width:355px;
     padding-left:50px;
 }
 .under-2{
@@ -409,29 +437,35 @@ footer{
     font-size:20px;
     color:#fff;
     align-items: center;
+    width:355px;
 }
 .under-2>a{
     display: flex;
     font-size:20px;
     color:#fff;
     align-items: center;
+    width:160px;
 }
 .under-3>a{
     display: flex;
     font-size:20px;
     color:#fff;
     align-items: center;
+    width:228px;
 }
 
 .under-1>a>img{
     width:50px;
+    margin-right: 10px;
 }
 
 .under-2>a>img{
     width:50px;
+    margin-right: 10px;
 }
 .under-3>a>img{
     width:50px;
+    margin-right: 10px;
 }
 
 
@@ -498,6 +532,12 @@ footer{
 }
 .nation>ul{
     display: flex;
+}
+.chart-1>a{
+    transition: all 0.3s linear; 
+}
+.chart-1>a:hover{
+    color:#999999;
 }
 
 .footer-2{
@@ -631,9 +671,9 @@ footer{
 
 
 
+/* 
 
-
-/* [name="slide"]{display:none;}
+[name="slide"]{display:none;}
 .slidebox{
     max-width:1920px;
     width:100%;
@@ -665,17 +705,15 @@ footer{
 }
 label.left{
     left:20px;
-    background-color:#242424;
-    background-image:url('./img/left arrow icon.png');
+
     background-position:center center;
     background-size:50%;
     background-repeat: no-repeat;
 }
 label.right{
     left:20px;
-    background-color:#242424;
     background-image:url('./img/right arrow icon.png');
     background-position:center center;
     background-size:50%;
     background-repeat: no-repeat;
-}*/
+} */

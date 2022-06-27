@@ -42,6 +42,7 @@
     font-size: 30px;
     color: #404040;
     width: 80px;
+    margin-right: 10px;
 }
 
 .icon-img>div>p {
@@ -52,3 +53,164 @@
     top: 25px;
 }
 
+.slide figure img{margin-top: 70px;}
+.slide{
+    width:100%  ;
+    margin:0 auto;
+
+
+    /* 고정값 */
+    position: relative;            
+    /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
+}
+.slide .slick-list{  
+    /* 배너들의 상위요소 */
+    overflow:hidden;  
+}
+/* .slide .slick-track{
+    /* 배너 그룹 및 translateX값으로 이동(스크립트)
+} */
+.slide .slick-track::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+.slide .slick-slide{
+    /* 개별 배너 */
+    margin:0; 
+    width:100%;
+    float:left;
+}
+.slide .slick-slide  img{width:100%;}
+
+/* next prev */           
+.slide .slick-prev{
+    position: absolute;
+    left:0%; top:50%;
+    z-index: 2;
+}
+.slide .slick-next{
+    position: absolute;
+    right:0; top:50%;
+    z-index: 2;
+}
+
+/* dots */
+.slide .slick-dots{
+    position: absolute;
+    left:0; bottom:5%;
+    width:100%;
+    text-align: center;
+
+    list-style-type: none;
+    padding:0;
+}
+.slide .slick-dots li{display: inline-block;}
+.slide .slick-dots li button{
+    width:15px; height:15px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    border:none;
+    font-size:0;
+    margin:0 10px;
+    margin-bottom: 0px;
+}
+.slide .slick-dots li.slick-active button{
+    background-color: rgb(167, 167, 167);
+}
+
+.slide figure{
+    position:relative;
+}
+.slide figure p:nth-of-type(1){
+    width:420px;
+    color:rgb(0, 0, 0);
+    position: absolute;
+    top:30%;
+    left:10%;
+}
+.slide figure p:nth-of-type(1) b{
+    font-size:30px;
+    width:500px;
+    color:#1c1c1c
+
+}
+.slide figure p:nth-of-type(2){
+    position: absolute;
+    color:#000000;
+    font-size:25px;
+    top:44%;
+    width:700px;
+    line-height: 40px;
+    left:10%;
+}
+.slide figure p:nth-of-type(3){
+    position: absolute;
+    color:#000000;
+    font-size:20px;
+    top:52%;
+    width:700px;
+    line-height: 40px;
+    left:10%;
+}
+.slide figure a{
+    font-size: 18px;
+    color:#000000;
+    position: absolute;
+    left:10%;
+    top:42%;
+}
+.slide  figure  a  img{
+    width:10px !important;
+    margin-top: 3px;
+    opacity:0.6;
+}
+.slide button .slick-prev .slick-arrow{
+    width:100px;
+    background: url('') no-repeat;
+    background:url("./img/left arrow icon.png");
+    z-index: 1;
+}
+.slide button .slick-next .slick-arrow{
+    background-image:url("./img/right arrow icon.png");
+    z-index: 1;
+}
+
+.slide > figure:nth-of-type(1) >  p:nth-of-type(1){
+    position:absolute;
+    font-size: 30px;
+}
+
+.slide .slick-prev{
+    background:url('../img/left arrow slide icon.png');
+    background-size: 30px;
+    width:32px;
+    height: 58px;
+    border: none;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    opacity:0;
+    margin-left: 30px;
+    top:46%;    
+    transition: all 0.3s linear;    
+}
+.slide .slick-prev:hover{
+    opacity: 0.5;
+}
+.slide .slick-next{
+    background:url('../img/right arrow slide icon.png');
+    background-size: 30px;
+    width:32px;
+    height: 58px;
+    border: none;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    opacity:0;
+    margin-right: 30px;
+    top: 46%;
+    transition: all 0.3s linear;   
+}
+.slide .slick-next:hover{
+    opacity: 0.5;
+}

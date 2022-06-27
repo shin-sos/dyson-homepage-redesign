@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <div class="text1">
+            <h2>제목</h2>
+            <nav>
+                <div class="t-btn">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                </div>
+                <div clss="t-contents">
+                    <div>내용1</div>
+                    <div>내용2</div>
+                    <div>내용3</div>
+                    <div>내용4</div>
+                    <div>내용5</div>
+                    <div>내용6</div>
+                    <div>내용7</div>
+                    <div>내용8</div>
+                    <div>내용9</div>
+                </div>
+            </nav>
+        </div>
+        <style>
+            .text1{margin:100px 0 300px;}
+            .t-btn button{width:100px;}
+            .t-btn button.active{background:rgb(56, 182, 255);}
+
+            .t-contents{position:relative;}
+            .t-contents div{
+                position:absolute;
+                left:0; top:0;
+                width:100%; height:200px;
+                background-color: aqua;
+
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                display:none;
+            }
+            .t-contents div.active{display:flex;}
+        </style>
+        <script>
+            
+        </script>
+    </article>
+</body>
+</html>

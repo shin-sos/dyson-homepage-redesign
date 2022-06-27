@@ -16,13 +16,13 @@
     /* 배너들의 상위요소 */
     overflow:hidden;  
 }
-.slide .slick-track{
-    /* 배너 그룹 및 translateX값으로 이동(스크립트) */
-}
+/* .slide .slick-track{
+    /* 배너 그룹 및 translateX값으로 이동(스크립트)
+} */
 .slide .slick-track::after{
-   content:'';
-   display:block;
-   clear: both;
+    content:'';
+    display:block;
+    clear: both;
 }
 .slide .slick-slide{
     /* 개별 배너 */
@@ -47,7 +47,7 @@
 /* dots */
 .slide .slick-dots{
     position: absolute;
-    left:0; bottom:15%;
+    left:0; bottom:5%;
     width:100%;
     text-align: center;
 
@@ -63,15 +63,46 @@
     border:none;
     font-size:0;
     margin:0 10px;
+    margin-bottom: 0px;
 }
 .slide .slick-dots li.slick-active button{
     background-color: rgb(167, 167, 167);
 }
 
-.slide  figure  a  img{
-    width:16px !important;
+.slide figure{
+    position:relative;
 }
-
+.slide figure p:nth-of-type(1){
+    width:300px;
+    color:rgb(70, 70, 70);
+    position: absolute;
+    top:22%;
+    left:10%;
+}
+.slide figure p:nth-of-type(1) b{
+    font-size:33px;
+}
+.slide figure p:nth-of-type(2){
+    position: absolute;
+    color:#5a5a5a;
+    font-size:25px;
+    top:30%;
+    width:600px;
+    line-height: 40px;
+    left:10%;
+}
+.slide figure a{
+    font-size: 18px;
+    color:#505050;
+    position: absolute;
+    left:10%;
+    top:42%;
+}
+.slide  figure  a  img{
+    width:10px !important;
+    margin-top: 3px;
+    opacity:0.6;
+}
 .slide button .slick-prev .slick-arrow{
     width:100px;
     background: url('') no-repeat;
@@ -88,6 +119,38 @@
     font-size: 30px;
 }
 
+.slide .slick-prev{
+    background:url('../img/left arrow slide icon.png');
+    background-size: 30px;
+    width:32px;
+    height: 58px;
+    border: none;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    opacity:0;
+    margin-left: 30px;
+    top:46%; 
+    transition: all 0.3s linear;    
+}
+.slide .slick-prev:hover{
+    opacity: 0.5;
+}
+.slide .slick-next{
+    background:url('../img/right arrow slide icon.png');
+    background-size: 30px;
+    width:32px;
+    height: 58px;
+    border: none;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    opacity:0;
+    margin-right: 30px;
+    top: 46%;
+    transition: all 0.3s linear;    
+}
+.slide .slick-next:hover{
+    opacity: 0.5;
+}
 
 
 
@@ -95,9 +158,22 @@
 
 
 
+.slide-warp1{
+    margin:0 auto;
+    width:100%;
+}
+.slide-warp1 h2{
+    width:100px;
+    position: absolute;
+    color:rgb(120, 120, 120);
+    top:72%;
+    left:10%;
+    z-index:1;
+}
 
-
-
+/* .slide1 figure img{
+    
+} */
 .slide1{
     width:100%  ;
     margin:0 auto;
@@ -111,13 +187,13 @@
     /* 배너들의 상위요소 */
     overflow:hidden;  
 }
-.slide1 .slick-track{
-    /* 배너 그룹 및 translateX값으로 이동(스크립트) */
-}
+/* .slide1 .slick-track{
+    /* 배너 그룹 및 translateX값으로 이동(스크립트)
+} */
 .slide1 .slick-track::after{
-   content:'';
-   display:block;
-   clear: both;
+    content:'';
+    display:block;
+    clear: both;
 }
 .slide1 .slick-slide{
     /* 개별 배너 */
@@ -142,7 +218,7 @@
 /* dots */
 .slide1 .slick-dots{
     position: absolute;
-    left:0; bottom:15%;
+    left:0; bottom:5%;
     width:100%;
     text-align: center;
 
@@ -158,15 +234,46 @@
     border:none;
     font-size:0;
     margin:0 10px;
+    margin-bottom: 0px;
 }
 .slide1 .slick-dots li.slick-active button{
     background-color: rgb(167, 167, 167);
 }
 
-.slide1  figure  a  img{
-    width:16px !important;
+.slide1 figure{
+    position:relative;
+}
+.slide1 h3{
+    position: absolute;
+    top:18%;
+    color:rgb(100, 100, 100);
+    left:10%;
+    font-size:25px;
 }
 
+.slide1 figure p{   
+    width:430px;
+    color:rgb(100, 100, 100);
+    position: absolute;
+    top:30%;
+    left:10%;
+    line-height:35px;
+    font-size:18px;
+}
+.slide1 figure a{
+    font-size: 15px;
+    color:rgb(100, 100, 100);
+    position: absolute;
+    left:10%;
+    top:50%;
+    
+}
+.slide1  figure  a  img{
+    width:8px !important;
+    margin-top: 3px;
+    margin-left:10px;
+    opacity:0.6;
+}
 .slide1 button .slick-prev .slick-arrow{
     width:100px;
     background: url('') no-repeat;
@@ -183,8 +290,38 @@
     font-size: 30px;
 }
 
-
-
+.slide1 .slick-prev{
+    background:url('../img/left arrow slide icon.png');
+    background-size: 30px;
+    width:32px;
+    height: 58px;
+    border: none;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    opacity:0;
+    margin-left: 30px;
+    top:46%;   
+    transition: all 0.3s linear; 
+}
+.slide1 .slick-prev:hover{
+    opacity: 0.5;
+}
+.slide1 .slick-next{
+    background:url('../img/right arrow slide icon.png');
+    background-size: 30px;
+    width:32px;
+    height: 58px;
+    border: none;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    opacity:0;
+    margin-right: 30px;
+    top: 46%;
+    transition: all 0.3s linear; 
+}
+.slide1 .slick-next:hover{
+    opacity: 0.5;
+}
 
 
 
@@ -242,6 +379,7 @@
     color:#5a5a5a;
     font-weight:bold;
     font-size: 20px;
+    
 }
 
 .icon-img>div>a>img {
@@ -250,6 +388,7 @@
     font-size: 30px;
     color: #404040;
     width: 80px;
+    margin-right: 10px;
 }
 
 .icon-img>div>p {
